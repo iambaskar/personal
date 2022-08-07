@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import video from './part.mp4'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
+      <About/>
+      <Contact/>
+      <video src={video}  autoPlay loop  muted className="video"></video>
+      {/* <BrowserRouter>
+        <Routes>
+        <Route path="/">
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+        </Routes>
+      </BrowserRouter> */}
     </div>
   );
 }

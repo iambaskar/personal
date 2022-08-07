@@ -1,0 +1,44 @@
+
+
+
+.myroles{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: bolder;
+    overflow: hidden;
+    height: 40px;
+    letter-spacing: 5px;
+}
+
+.myroles >.role{
+    color: #e880f5;
+    text-align: center;
+    height: 50px;
+    font-weight: bolder;
+    animation: float 10s infinite alternate;
+}
+
+@media (max-width:786px) {
+    .myroles{
+        font-size: 100%;
+    }
+    .hello{
+        font-size: 100%;
+    }
+}
+
+@keyframes float {
+    25%{
+        transform: translateY(-50px);
+    }
+    50%{
+        
+        transform: translateY(-100px);
+    }
+    75%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
